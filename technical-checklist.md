@@ -1,0 +1,40 @@
+# Coffee Technical Checklist
+- Date/time:
+- Applicant name:
+- Reviewer(s):
+
+- Simulation
+  - [ ] Runs `ruby simulation.rb`
+- Initial error: undefined method `place_order' for an instance of CoffeeShop (NoMethodError)
+    - [ ] Finds line causing error `coffee_shop.rb` line 10
+    - [ ] Fixes error (typo with 'place' missing 'p')
+    - [ ] Finds line causing error in `coffee_shop.rb` line 10
+    - [ ] Fixes error (removes `self` from `self.place_order`)
+- Error: undefined local variable or method `sie' for an instance of Coffee (NameError)
+    - [ ] Finds line causing error in `coffee.rb` line 10
+    - [ ] Fixes error (fixes typo 'sie' to 'size)
+- Error: undefined local variable or method `orders' for an instance of CoffeeShop (NameError)
+  - [ ] Finds line causing error in `coffee_shop.rb` line 19 & line 28
+  - [ ] Fixes error (change `orders` to `@orders`)
+- Error: undefined method `clean_up' for an instance of Array (NoMethodError)
+  - [ ] Finds line causing error in `coffee_shop.rb`
+  - [ ] Fixes error (`@orders.clean_up to @orders.clear`)
+- Logs each order and size after `☕ Welcome to Inventory Java Haven!`
+  - [ ] Identifies correct location for orders in `simulation.rb`
+  - [ ] Adds capitalize method for type in `simlation.rb` line
+  - [ ] Correctly logs `"📖 Placed order for a #{coffee.description}"`
+  - [ ] Placed order for a Medium latte
+  - [ ] Placed order for a Large Cappuccino
+  - [ ] Placed order for a Small Espresso
+- Log order fulfillment for each order
+  - [ ] Removes `!` from `coffee_shop.rb` line 20
+  - [ ] Identifies correct location in `inventory.rb`
+  - [ ] Change operations to `>=` from `==` for `has_enough_supplies?`
+  - [ ] Change `@supply_count` to `2` from `1`
+  - [ ] Logs order fulfillment for Medium Latte
+  - [ ] Logs order fulfillment for Large Cappuccino
+  - [ ] Logs order fulfillment for small espresso
+- Log number of orders remaing 
+  - [ ] Identifies correct location in `coffee_shop.rb`
+  - [ ] Correctly calls private method `clean_up` inside the `fulfill_orders` method
+  - [ ] Adds emoji 🏁
