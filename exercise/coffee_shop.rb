@@ -31,6 +31,6 @@ class CoffeeShop
 
 
   def clean_up
-    puts "There are 0 orders remaining!"
+    puts "🏁 There are 0 orders remaining!"
   end
 end
