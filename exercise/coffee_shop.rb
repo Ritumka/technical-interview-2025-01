@@ -25,7 +25,10 @@ class CoffeeShop
       end
     end
 
+    @orders.clear
+
   end
+
 
   def clean_up
     puts "There are 0 orders remaining!"
